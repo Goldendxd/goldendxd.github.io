@@ -2,706 +2,109 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Made by Golden</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    />
-    <script src="https://unpkg.com/@splinetool/viewer@1.0.53/build/spline-viewer.js"></script>
-    <style>
-      :root {
-        --primary: #4361ee;
-        --primary-light: #4cc9f0;
-        --secondary: #7209b7;
-        --success: #4caf50;
-        --error: #f44336;
-        --dark: #1a1a2e;
-        --light: #f8f9fa;
-        --gray: #6c757d;
-      }
-
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        font-family: "Poppins", sans-serif;
-        background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
-        color: var(--dark);
-        line-height: 1.6;
-        min-height: 100vh;
-        padding: 0;
-        overflow-x: hidden;
-      }
-
-      #quiz-container {
-        max-width: 800px;
-        margin: 0 auto;
-        background: rgba(255, 255, 255, 0.95);
-        border-radius: 20px;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-        padding: 40px;
-        position: relative;
-        z-index: 10;
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        transform: translateY(50px);
-        opacity: 0;
-        animation: fadeInUp 0.8s forwards 0.3s;
-      }
-
-      @keyframes fadeInUp {
-        to {
-          transform: translateY(0);
-          opacity: 1;
-        }
-      }
-
-      .quiz-header {
-        text-align: center;
-        margin-bottom: 40px;
-        position: relative;
-      }
-
-      h1 {
-        font-size: 2.5rem;
-        color: var(--primary);
-        margin-bottom: 15px;
-        font-weight: 700;
-        background: linear-gradient(to right, var(--primary), var(--secondary));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      .quiz-progress {
-        height: 8px;
-        background: #e9ecef;
-        border-radius: 10px;
-        margin-bottom: 30px;
-        overflow: hidden;
-      }
-
-      .progress-bar {
-        height: 100%;
-        background: linear-gradient(
-          to right,
-          var(--primary-light),
-          var(--primary)
-        );
-        border-radius: 10px;
-        transition: width 0.4s ease;
-        width: 0%;
-      }
-
-      .question-block {
-        margin-bottom: 30px;
-        padding: 25px;
-        border-radius: 15px;
-        background: white;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        border: 1px solid rgba(0, 0, 0, 0.05);
-        transform: translateX(-20px);
-        opacity: 0;
-        animation: fadeInRight 0.5s forwards;
-      }
-
-      @keyframes fadeInRight {
-        to {
-          transform: translateX(0);
-          opacity: 1;
-        }
-      }
-
-      .question-block:nth-child(2) {
-        animation-delay: 0.2s;
-      }
-      .question-block:nth-child(3) {
-        animation-delay: 0.4s;
-      }
-      .question-block:nth-child(4) {
-        animation-delay: 0.6s;
-      }
-      .question-block:nth-child(5) {
-        animation-delay: 0.8s;
-      }
-
-      .question-text {
-        font-size: 1.2rem;
-        margin-bottom: 20px;
-        font-weight: 600;
-        color: var(--dark);
-        position: relative;
-        padding-left: 15px;
-      }
-
-      .question-text:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 4px;
-        background: var(--primary);
-        border-radius: 4px;
-      }
-
-      .options-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 12px;
-      }
-
-      label {
-        display: flex;
-        align-items: center;
-        padding: 15px 20px;
-        border-radius: 10px;
-        background: var(--light);
-        cursor: pointer;
-        transition: all 0.3s ease;
-        position: relative;
-        overflow: hidden;
-      }
-
-      label:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 0;
-        background: rgba(67, 97, 238, 0.1);
-        transition: width 0.3s ease;
-      }
-
-      label:hover:before {
-        width: 100%;
-      }
-
-      label:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-      }
-
-      input[type="radio"] {
-        appearance: none;
-        -webkit-appearance: none;
-        width: 20px;
-        height: 20px;
-        border: 2px solid var(--gray);
-        border-radius: 50%;
-        margin-right: 15px;
-        position: relative;
-        transition: all 0.2s ease;
-        cursor: pointer;
-      }
-
-      input[type="radio"]:checked {
-        border-color: var(--primary);
-      }
-
-      input[type="radio"]:checked:after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 10px;
-        height: 10px;
-        background: var(--primary);
-        border-radius: 50%;
-      }
-
-      label.correct {
-        background-color: rgba(76, 175, 80, 0.15);
-        border-left: 4px solid var(--success);
-      }
-
-      label.correct input[type="radio"] {
-        border-color: var(--success);
-      }
-
-      label.correct input[type="radio"]:checked:after {
-        background: var(--success);
-      }
-
-      label.wrong {
-        background-color: rgba(244, 67, 54, 0.1);
-        border-left: 4px solid var(--error);
-      }
-
-      label.wrong input[type="radio"] {
-        border-color: var(--error);
-      }
-
-      label.wrong input[type="radio"]:checked:after {
-        background: var(--error);
-      }
-
-      .reason {
-        margin-top: 15px;
-        padding: 15px;
-        background: rgba(67, 97, 238, 0.05);
-        border-radius: 8px;
-        color: var(--dark);
-        font-size: 0.95rem;
-        border-left: 4px solid var(--primary);
-        display: none;
-      }
-
-      .reason.show {
-        display: block;
-        animation: fadeIn 0.5s ease;
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(10px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      #results {
-        text-align: center;
-        margin-top: 40px;
-        padding: 25px;
-        border-radius: 15px;
-        background: white;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        font-size: 1.3rem;
-        font-weight: 600;
-        color: var(--primary);
-        display: none;
-      }
-
-      .result-message {
-        font-size: 1.1rem;
-        margin-top: 10px;
-        color: var(--gray);
-      }
-
-      .score-display {
-        font-size: 2rem;
-        font-weight: 700;
-        margin: 15px 0;
-        color: var(--primary);
-      }
-
-      .restart-btn {
-        background: var(--primary);
-        color: white;
-        border: none;
-        padding: 12px 30px;
-        border-radius: 50px;
-        font-size: 1rem;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        margin-top: 20px;
-        box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
-      }
-
-      .restart-btn:hover {
-        background: var(--secondary);
-        transform: translateY(-2px);
-        box-shadow: 0 8px 20px rgba(114, 9, 183, 0.3);
-      }
-
-      .spline-container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        opacity: 0.3;
-      }
-
-      .confetti {
-        position: fixed;
-        width: 10px;
-        height: 10px;
-        background-color: var(--primary);
-        opacity: 0;
-        z-index: 1000;
-        animation: confetti-fall 5s linear forwards;
-      }
-
-      @keyframes confetti-fall {
-        0% {
-          transform: translateY(-100px) rotate(0deg);
-          opacity: 1;
-        }
-        100% {
-          transform: translateY(100vh) rotate(360deg);
-          opacity: 0;
-        }
-      }
-
-      @media (max-width: 768px) {
-        #quiz-container {
-          padding: 25px;
-          margin: 20px;
-          width: auto;
-        }
-
-        h1 {
-          font-size: 1.8rem;
-        }
-
-        .question-block {
-          padding: 15px;
-        }
-      }
-    </style>
+    <title>MCQ Quiz - Made by golden</title>
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <!-- Spline 3D Background -->
-    <div class="spline-container">
-      <spline-viewer
-        url="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode"
-      ></spline-viewer>
-    </div>
-
     <div id="quiz-container">
-      <div class="quiz-header">
-        <h1>CHASA TEST</h1>
-        <p>Yeti gare pass fr</p>
-      </div>
-
-      <div class="quiz-progress">
-        <div class="progress-bar" id="progress-bar"></div>
-      </div>
-
+      <h1>MCQ Quiz</h1>
       <div id="questions"></div>
-
-      <div id="results">
-        <h2>Quiz Completed!</h2>
-        <div class="score-display" id="score-display">0/0</div>
-        <p class="result-message" id="result-message"></p>
-        <button class="restart-btn" id="restart-btn">Try Again</button>
-      </div>
+      <div id="results"></div>
     </div>
 
     <script>
-      // Enhanced MCQ Quiz with animations and 3D elements
-      document.addEventListener("DOMContentLoaded", async () => {
-        // Load questions
-        const questions = await loadQuestions();
-        let currentScore = 0;
-
-        // Initialize quiz
-        renderQuestions(questions);
-        setupEventListeners(questions);
-
-        // Update progress bar
-        updateProgressBar(0, questions.length);
-
-        // Animation for quiz container
-        const quizContainer = document.getElementById("quiz-container");
-        quizContainer.style.transform = "translateY(0)";
-        quizContainer.style.opacity = "1";
-
-        // Confetti effect for correct answers
-        function createConfetti() {
-          const colors = [
-            "#4361ee",
-            "#4cc9f0",
-            "#7209b7",
-            "#3a0ca3",
-            "#f72585",
-          ];
-          for (let i = 0; i < 50; i++) {
-            const confetti = document.createElement("div");
-            confetti.className = "confetti";
-            confetti.style.left = Math.random() * 100 + "vw";
-            confetti.style.backgroundColor =
-              colors[Math.floor(Math.random() * colors.length)];
-            confetti.style.width = Math.random() * 10 + 5 + "px";
-            confetti.style.height = Math.random() * 10 + 5 + "px";
-            confetti.style.animationDuration = Math.random() * 3 + 2 + "s";
-            confetti.style.animationDelay = Math.random() * 2 + "s";
-            document.body.appendChild(confetti);
-
-            // Remove confetti after animation
-            setTimeout(() => {
-              confetti.remove();
-            }, 5000);
-          }
-        }
-
-        // Load questions from file
-        async function loadQuestions() {
-          try {
-            // In a real app, you would fetch this from a server
-            // For this example, we'll use a simulated response
-            const sampleQuestions = [
-              {
-                question: "What is the capital of France?",
-                options: ["London", "Berlin", "Paris", "Madrid"],
-                answer: 2,
-                reason:
-                  "Paris has been the capital of France since the 5th century.",
-              },
-              {
-                question: "Which planet is known as the Red Planet?",
-                options: ["Venus", "Mars", "Jupiter", "Saturn"],
-                answer: 1,
-                reason:
-                  "Mars appears red due to iron oxide (rust) on its surface.",
-              },
-              {
-                question: "What is the largest mammal in the world?",
-                options: ["Elephant", "Blue Whale", "Giraffe", "Polar Bear"],
-                answer: 1,
-                reason:
-                  "The blue whale can reach lengths of up to 100 feet and weights of 200 tons.",
-              },
-              {
-                question:
-                  "Which language is primarily used for web development?",
-                options: ["Java", "Python", "JavaScript", "C++"],
-                answer: 2,
-                reason:
-                  "JavaScript is the programming language of the web, running in all modern browsers.",
-              },
-              {
-                question: "What year was JavaScript first released?",
-                options: ["1990", "1995", "2000", "2005"],
-                answer: 1,
-                reason:
-                  "JavaScript was created by Brendan Eich in 1995 while working at Netscape.",
-              },
-            ];
-
-            return sampleQuestions;
-          } catch (error) {
-            console.error("Error loading questions:", error);
-            return [];
-          }
-        }
-
-        // Render questions to the DOM
-        function renderQuestions(questions) {
-          const container = document.getElementById("questions");
-          container.innerHTML = "";
-
-          questions.forEach((q, idx) => {
-            const qDiv = document.createElement("div");
-            qDiv.className = "question-block";
-            qDiv.style.animationDelay = `${idx * 0.1}s`;
-
-            const qTitle = document.createElement("div");
-            qTitle.className = "question-text";
-            qTitle.innerHTML = `${q.question}`;
-            qDiv.appendChild(qTitle);
-
-            const optionsContainer = document.createElement("div");
-            optionsContainer.className = "options-container";
-
-            q.options.forEach((opt, oIdx) => {
-              const label = document.createElement("label");
-              const input = document.createElement("input");
-              input.type = "radio";
-              input.name = `q${idx}`;
-              input.value = oIdx;
-
-              label.appendChild(input);
-              label.appendChild(document.createTextNode(opt));
-              optionsContainer.appendChild(label);
-            });
-
-            qDiv.appendChild(optionsContainer);
-
-            const reasonEl = document.createElement("div");
-            reasonEl.className = "reason";
-            reasonEl.id = `reason-${idx}`;
-            qDiv.appendChild(reasonEl);
-
-            container.appendChild(qDiv);
+      async function loadQuestions() {
+        const response = await fetch("questions.txt");
+        const text = await response.text();
+        const lines = text.split("\n").filter((line) => line.trim() !== "");
+        let questions = [];
+        for (let i = 0; i < lines.length; i += 4) {
+          questions.push({
+            question: lines[i].replace(/^\d+\.\s*/, ""),
+            options: lines[i + 1].split(","),
+            answer: parseInt(lines[i + 2].trim()) - 1,
+            reason: lines[i + 3],
           });
         }
+        return questions;
+      }
 
-        // Set up event listeners for radio buttons
-        function setupEventListeners(questions) {
-          questions.forEach((q, idx) => {
-            const radioButtons = document.querySelectorAll(
-              `input[name="q${idx}"]`
-            );
+      function renderQuestions(questions) {
+        const container = document.getElementById("questions");
+        container.innerHTML = "";
 
-            radioButtons.forEach((radio, oIdx) => {
-              radio.addEventListener("change", () => {
-                const qDiv = radio.closest(".question-block");
-                const labels = qDiv.querySelectorAll("label");
-                const reasonEl = document.getElementById(`reason-${idx}`);
+        questions.forEach((q, idx) => {
+          const qDiv = document.createElement("div");
+          qDiv.className = "question-block";
 
-                // Clear previous styles
-                labels.forEach((label) => {
-                  label.classList.remove("correct", "wrong");
-                });
+          const qTitle = document.createElement("p");
+          qTitle.innerHTML = `<b>Q${idx + 1}:</b> ${q.question}`;
+          qDiv.appendChild(qTitle);
 
-                // Mark selected option
-                const selectedLabel = radio.parentElement;
-                if (oIdx === q.answer) {
-                  selectedLabel.classList.add("correct");
-                  currentScore++;
-                  createConfetti();
-                } else {
-                  selectedLabel.classList.add("wrong");
-                  // Highlight correct answer
-                  const correctLabel = qDiv.querySelector(
-                    `input[value="${q.answer}"]`
-                  ).parentElement;
-                  correctLabel.classList.add("correct");
-                }
+          q.options.forEach((opt, oIdx) => {
+            const label = document.createElement("label");
+            const input = document.createElement("input");
+            input.type = "radio";
+            input.name = `q${idx}`;
+            input.value = oIdx;
 
-                // Show reason
-                reasonEl.textContent = `Explanation: ${q.reason}`;
-                reasonEl.classList.add("show");
-
-                // Disable all radios in this question after selection
-                radioButtons.forEach((rb) => {
-                  rb.disabled = true;
-                });
-
-                // Update score and progress
-                updateScore(questions);
-                updateProgressBar(
-                  getAnsweredCount(questions),
-                  questions.length
-                );
-
-                // Check if all questions are answered
-                if (getAnsweredCount(questions) === questions.length) {
-                  showResults(questions);
-                }
+            input.addEventListener("change", () => {
+              // Clear previous styles
+              [...qDiv.querySelectorAll("label")].forEach((l) => {
+                l.classList.remove("correct", "wrong");
               });
+              // Mark selected option
+              if (oIdx === q.answer) {
+                label.classList.add("correct");
+              } else {
+                label.classList.add("wrong");
+                // Also highlight correct option
+                const correctLabel = qDiv.querySelector(
+                  `input[value="${q.answer}"]`
+                ).parentElement;
+                correctLabel.classList.add("correct");
+              }
+
+              // Show reason
+              let reasonEl = qDiv.querySelector(".reason");
+              if (!reasonEl) {
+                reasonEl = document.createElement("p");
+                reasonEl.className = "reason";
+                qDiv.appendChild(reasonEl);
+              }
+              reasonEl.textContent = `Reason: ${q.reason}`;
+
+              // Update score
+              updateScore(questions);
             });
+
+            label.appendChild(input);
+            label.appendChild(document.createTextNode(opt));
+            qDiv.appendChild(label);
           });
 
-          // Restart button event listener
-          document
-            .getElementById("restart-btn")
-            .addEventListener("click", () => {
-              resetQuiz(questions);
-            });
-        }
+          container.appendChild(qDiv);
+        });
+      }
 
-        // Get count of answered questions
-        function getAnsweredCount(questions) {
-          let answered = 0;
-          questions.forEach((q, idx) => {
-            const selected = document.querySelector(
-              `input[name="q${idx}"]:checked`
-            );
-            if (selected) answered++;
-          });
-          return answered;
-        }
-
-        // Update progress bar
-        function updateProgressBar(answered, total) {
-          const progressBar = document.getElementById("progress-bar");
-          const percentage = (answered / total) * 100;
-          progressBar.style.width = `${percentage}%`;
-        }
-
-        // Update score display
-        function updateScore(questions) {
-          let score = 0;
-          questions.forEach((q, idx) => {
-            const selected = document.querySelector(
-              `input[name="q${idx}"]:checked`
-            );
-            if (selected && parseInt(selected.value) === q.answer) {
-              score++;
-            }
-          });
-
-          // You can update a score display here if needed
-        }
-
-        // Show final results
-        function showResults(questions) {
-          const resultsContainer = document.getElementById("results");
-          const scoreDisplay = document.getElementById("score-display");
-          const resultMessage = document.getElementById("result-message");
-
-          let score = 0;
-          questions.forEach((q, idx) => {
-            const selected = document.querySelector(
-              `input[name="q${idx}"]:checked`
-            );
-            if (selected && parseInt(selected.value) === q.answer) {
-              score++;
-            }
-          });
-
-          scoreDisplay.textContent = `${score}/${questions.length}`;
-
-          // Custom message based on score
-          const percentage = (score / questions.length) * 100;
-          if (percentage >= 80) {
-            resultMessage.textContent =
-              "Excellent work! You really know your stuff.";
-          } else if (percentage >= 60) {
-            resultMessage.textContent =
-              "Good job! You have a solid understanding.";
-          } else if (percentage >= 40) {
-            resultMessage.textContent =
-              "Not bad! Review the explanations to improve.";
-          } else {
-            resultMessage.textContent =
-              "Keep practicing! Review the material and try again.";
+      function updateScore(questions) {
+        let score = 0;
+        questions.forEach((q, idx) => {
+          const selected = document.querySelector(
+            `input[name="q${idx}"]:checked`
+          );
+          if (selected && parseInt(selected.value) === q.answer) {
+            score++;
           }
+        });
+        document.getElementById(
+          "results"
+        ).textContent = `Your Score: ${score} / ${questions.length}`;
+      }
 
-          resultsContainer.style.display = "block";
-          resultsContainer.scrollIntoView({ behavior: "smooth" });
-        }
-
-        // Reset quiz to initial state
-        function resetQuiz(questions) {
-          currentScore = 0;
-
-          // Reset all radio buttons
-          questions.forEach((q, idx) => {
-            const radioButtons = document.querySelectorAll(
-              `input[name="q${idx}"]`
-            );
-            radioButtons.forEach((radio) => {
-              radio.checked = false;
-              radio.disabled = false;
-            });
-
-            // Clear styles and reasons
-            const qDiv = document
-              .querySelector(`input[name="q${idx}"]`)
-              .closest(".question-block");
-            const labels = qDiv.querySelectorAll("label");
-            labels.forEach((label) => {
-              label.classList.remove("correct", "wrong");
-            });
-
-            const reasonEl = document.getElementById(`reason-${idx}`);
-            reasonEl.classList.remove("show");
-          });
-
-          // Hide results
-          document.getElementById("results").style.display = "none";
-
-          // Reset progress bar
-          updateProgressBar(0, questions.length);
-
-          // Scroll to top
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        }
+      document.addEventListener("DOMContentLoaded", async () => {
+        const questions = await loadQuestions();
+        renderQuestions(questions);
       });
     </script>
   </body>
