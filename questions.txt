@@ -1,0 +1,1501 @@
+1. What is the primary function of a CPU?
+Manages input devices,Performs calculations and executes instructions,Stores permanent data,Displays output
+2
+The CPU (Central Processing Unit) handles calculations and instructions.
+
+2. Which socket type uses pins on the CPU?
+LGA,PGA,BGA,ZIF
+2
+PGA (Pin Grid Array) sockets have pins on the CPU.
+
+3. What is the purpose of cache memory?
+Long-term storage,Store BIOS settings,Speed up CPU access,Replace RAM
+3
+Cache memory stores frequently used data for faster CPU access.
+
+4. Which component converts AC to DC power?
+CPU,PSU,GPU,SSD
+2
+The Power Supply Unit (PSU) converts wall outlet AC to DC.
+
+5. What does RAID 0 provide?
+Data redundancy,Improved read speeds,Faster performance via striping,Fault tolerance
+3
+RAID 0 stripes data across disks for speed but lacks redundancy.
+
+6. Which monitor type emits its own light?
+CRT,LCD,LED,OLED
+4
+OLED pixels emit light without a backlight.
+
+7. What defines a motherboard's form factor?
+CPU socket type,Size and layout,Power connector type,Chipset model
+2
+Form factor specifies the motherboard's physical dimensions.
+
+8. Which PSU connector powers SATA drives?
+24-pin,4-pin Molex,15-pin SATA,8-pin PCIe
+3
+15-pin SATA connectors power SATA drives.
+
+9. What does the Northbridge control?
+USB ports,CPU-RAM communication,Hard drives,Network cards
+2
+Northbridge manages CPU-to-RAM and CPU-to-GPU communication.
+
+10. Which is a volatile memory type?
+ROM,EEPROM,SRAM,HDD
+3
+SRAM (cache) and DRAM (RAM) lose data when powered off.
+
+11. What does DDR in RAM stand for?
+Double Data Rate,Dual Disk Read,Digital Data Retention,Direct Device Access
+1
+DDR RAM transfers data twice per clock cycle.
+
+12. Which RAID level mirrors data?
+RAID 0,RAID 1,RAID 5,RAID 6
+2
+RAID 1 creates an exact copy (mirror) on two disks.
+
+13. What initializes hardware during boot?
+Applications,BIOS,Operating System,Drivers
+2
+BIOS (Basic Input/Output System) initializes hardware.
+
+14. Which is an output device?
+Keyboard,Monitor,Mouse,Scanner
+2
+Monitors display visual output.
+
+15. What does OLED stand for?
+Organic Light Emitting Diode,Optical Laser Emission Device,Overclocked LED,Onboard Light Engine
+1
+OLED uses organic compounds to emit light.
+
+16. Which PSU type has detachable cables?
+Fixed,Modular,Semi-modular,Adapter
+2
+Modular PSUs allow unused cables to be removed.
+
+17. What measures CPU speed?
+Voltage (V),Clock rate (GHz),Amperage (A),Wattage (W)
+2
+Clock speed (GHz) measures cycles per second.
+
+18. Which is NOT a motherboard form factor?
+ATX,microATX,PCIe,ITX
+3
+PCIe is an expansion slot standard.
+
+19. What does GPU stand for?
+Graphical Processing Unit,General Processing Unit,Graphics Power Unit,Global Processing Unit
+1
+GPU handles graphics rendering.
+
+20. Which RAM type is used in laptops?
+DIMM,SODIMM,SIMM,RIMM
+2
+SODIMM (Small Outline DIMM) is compact for laptops.
+
+21. What is the function of a KVM switch?
+Power control,Connect multiple PCs to one keyboard/mouse,Network routing,Data backup
+2
+KVM switches let one keyboard/mouse control multiple computers.
+
+22. Which connector powers floppy drives?
+24-pin,Molex,Berg,SATA
+3
+4-pin Berg connectors power floppy drives.
+
+23. What is the main role of Southbridge?
+Manage CPU-RAM,Control USB/SATA ports,Handle graphics,Power regulation
+2
+Southbridge manages I/O devices like USB/SATA.
+
+24. What does ZIF stand for in CPU sockets?
+Zero Insertion Force,Zone Interface Format,Zonal Input Frequency,Zigzag Inline Frame
+1
+ZIF sockets require no force to install CPUs.
+
+25. Which is a storage interface?
+HDMI,SATA,VGA,PS/2
+2
+SATA connects storage drives to motherboards.
+
+26. What does RPM measure for HDDs?
+Read speed,Storage capacity,Rotation speed,Power usage
+3
+RPM = Revolutions Per Minute (disk spin speed).
+
+27. Which SSD type is fastest?
+SATA SSD,mSATA,M.2 SATA,M.2 NVMe
+4
+M.2 NVMe SSDs use PCIe lanes for speed.
+
+28. What is the maximum primary partitions in MBR?
+2,4,6,8
+2
+MBR supports up to 4 primary partitions.
+
+29. Which RAID level uses parity?
+RAID 0,RAID 1,RAID 5,RAID 10
+3
+RAID 5 uses distributed parity for redundancy.
+
+30. What does EEPROM stand for?
+Electrically Erasable Programmable ROM,Embedded EPROM,Extended Erasable PROM,Encrypted EPROM
+1
+EEPROM can be erased electrically.
+
+31. Which tool checks disk errors in Windows?
+chkdsk,defrag,format,diskpart
+1
+`chkdsk` scans and repairs disk errors.
+
+32. What does DHCP do?
+Assign IP addresses,Resolve hostnames,Encrypt data,Block malware
+1
+DHCP dynamically assigns IP addresses.
+
+33. Which port does HTTPS use?
+80,443,21,25
+2
+HTTPS uses port 443 for secure traffic.
+
+34. What is a zombie in cybersecurity?
+A malware type,A hacked device in a botnet,A firewall,A virus
+2
+Zombies are devices controlled by attackers.
+
+35. Which protocol uses port 25?
+HTTP,SMTP,DNS,FTP
+2
+SMTP (email) uses port 25.
+
+36. What does BIOS stand for?
+Basic Input Output System,Binary Integrated OS,Boot Initialization Order System,Baseboard Interconnect OS
+1
+BIOS initializes hardware at boot.
+
+37. Which is a Layer 2 device?
+Router,Switch,Hub,Firewall
+2
+Switches use MAC addresses (Data Link layer).
+
+38. What is the main OSI layer for IP?
+Physical,Data Link,Network,Transport
+3
+IP operates at Layer 3 (Network).
+
+39. Which cable connects similar devices?
+Straight-through,Crossover,Rollover,Fiber
+2
+Crossover cables connect like devices (e.g., switch to switch).
+
+40. What does TLS encrypt?
+Network traffic,Hard drives,BIOS settings,Power supply
+1
+TLS secures data in transit (e.g., HTTPS).
+
+41. Which is a social engineering attack?
+DDoS,Phishing,RAID failure,Overclocking
+2
+Phishing tricks users into revealing data.
+
+42. What does WPA3 improve over WPA2?
+Speed,Encryption strength,Compatibility,Cost
+2
+WPA3 uses stronger encryption protocols.
+
+43. Which command shows IP configuration?
+ipconfig,ping,tracert,netstat
+1
+`ipconfig` displays IP address/subnet/gateway.
+
+44. What does POST check during boot?
+Software licenses,Hardware functionality,Network speed,User permissions
+2
+POST (Power-On Self-Test) verifies hardware.
+
+45. Which is a preventive maintenance task?
+Data wiping,Defragmenting,Phishing,Overclocking
+2
+Defragmenting optimizes hard drive performance.
+
+46. What does MTBF measure?
+Cost,Reliability,Speed,Power usage
+2
+MTBF = Mean Time Between Failures (reliability).
+
+47. Which is a network topology?
+RAID,Star,M.2,BIOS
+2
+Star topology connects devices to a central hub.
+
+48. What does NIC stand for?
+Network Interface Card,Network Internet Controller,Neural Input Chip,Non-Volatile IC
+1
+NIC connects devices to a network.
+
+49. Which tool measures voltage?
+Multimeter,Screwdriver,Cable tester,Antistatic strap
+1
+Multimeters test electrical values.
+
+50. What does SFC /scannow do?
+Defrag disks,Repair system files,Assign IPs,Update drivers
+2
+System File Checker repairs corrupted OS files.
+
+51. What is the primary purpose of UEFI compared to BIOS?  
+Faster boot times,Graphical interface,Support for larger disks,All of the above  
+4  
+UEFI replaces BIOS with modern features like GUI and support for drives >2TB.  
+
+52. Which DDR RAM uses 288 pins?  
+DDR3,DDR4,DDR5,DDR2  
+2  
+DDR4 modules use 288 pins for desktops.  
+
+53. What is the maximum speed of USB 3.2 Gen 2x2?  
+5 Gbps,10 Gbps,20 Gbps,40 Gbps  
+3  
+USB 3.2 Gen 2x2 offers 20 Gbps transfer rates.  
+
+54. Which file system does Windows use for system drives?  
+FAT32,NTFS,exFAT,ext4  
+2  
+NTFS supports permissions, encryption, and large files.  
+
+55. What does a yellow "!" in Device Manager mean?  
+Disabled device,Driver error,Unpowered device,Hardware failure  
+2  
+Yellow exclamation mark indicates a driver issue.  
+
+56. Which RAID combines mirroring and striping?  
+RAID 0,RAID 1,RAID 5,RAID 10  
+4  
+RAID 10 (1+0) mirrors pairs and stripes data.  
+
+57. Which OSI layer handles routing?  
+Physical,Data Link,Network,Transport  
+3  
+Layer 3 (Network) manages IP routing.  
+
+58. Which protocol uses port 22?  
+HTTP,SSH,DNS,SMTP  
+2  
+SSH (Secure Shell) uses port 22 for secure access.  
+
+59. What does a DNS server do?  
+Assign IPs,Resolve domain names,Encrypt data,Block malware  
+2  
+DNS translates domains (e.g., google.com) to IPs.  
+
+60. Which Wi-Fi standard uses 5 GHz?  
+802.11a,802.11b,802.11g,802.11n  
+1  
+802.11a operates on 5 GHz for less interference.  
+
+61. What is the function of ARP?  
+Map IP to MAC,Assign IPs,Encrypt traffic,Block attacks  
+1  
+ARP resolves IP addresses to MAC addresses.  
+
+62. Which is a Type 1 hypervisor?  
+VMware Workstation,Hyper-V,Oracle VirtualBox,Parallels  
+2  
+Hyper-V is a bare-metal (Type 1) hypervisor.  
+
+63. What does "MTTR" stand for?  
+Mean Time to Repair,Maximum Temperature Threshold,Memory Test Tool,Mainboard Tester  
+1  
+MTTR = Average time to fix a failed system.  
+
+64. Which tool traces network paths?  
+ipconfig,ping,tracert,netstat  
+3  
+`tracert` maps the route packets take to a destination.  
+
+65. What is the default subnet mask for 192.168.1.1?  
+255.0.0.0,255.255.0.0,255.255.255.0,255.255.255.255  
+3  
+Class C IPs use 255.255.255.0 as the default mask.  
+
+66. Which encryption does WPA2 use?  
+AES,TKIP,WEP,RC4  
+1  
+WPA2 uses AES (Advanced Encryption Standard).  
+
+67. What does "PoE" provide?  
+Power over Ethernet,Printer drivers,OS updates,Firewall rules  
+1  
+PoE delivers power to devices via Ethernet cables.  
+
+68. Which is a symptom of RAM failure?  
+Blue screen errors,Slow internet,Corrupt files,High CPU usage  
+1  
+Faulty RAM causes BSODs and random crashes.  
+
+69. What does GPT allow over MBR?  
+Faster speeds,>4 primary partitions,Better encryption,Lower cost  
+2  
+GPT supports up to 128 primary partitions.  
+
+70. Which command lists directory contents in Linux?  
+cd,ls,mkdir,rm  
+2  
+`ls` lists files/folders in Linux.  
+
+71. What is a common use for a loopback plug?  
+Test network ports,Clean RAM,Defrag HDD,Update BIOS  
+1  
+Loopback plugs diagnose NICs by simulating traffic.  
+
+72. Which is a dynamic routing protocol?  
+RIP,Static route,Default gateway,ARP  
+1  
+RIP (Routing Information Protocol) updates routes automatically.  
+
+73. What does "NAT" do?  
+Translate private/public IPs,Encrypt data,Block malware,Assign DNS  
+1  
+NAT allows multiple devices to share a public IP.  
+
+74. Which port does FTP use?  
+20/21,22,80,443  
+1  
+FTP uses ports 20 (data) and 21 (control).  
+
+75. What is the purpose of an MX record?  
+Email routing,Web hosting,DNS resolution,File sharing  
+1  
+MX records direct email to mail servers.  
+
+76. Which voltage does a CPU typically use?  
+3.3V,5V,12V,1.2V  
+4  
+Modern CPUs use ~1.2V for power efficiency.  
+
+77. What does "ECC" RAM prevent?  
+Overheating,Data corruption,Power surges,Driver issues  
+2  
+ECC RAM corrects memory errors in servers.  
+
+78. Which tool creates disk images?  
+chkdsk,Clonezilla,Defrag,Task Manager  
+2  
+Clonezilla clones disks/partitions for backups.  
+
+79. What is a common cause of overheating?  
+Dust buildup,Low RAM,Slow HDD,Incorrect IP  
+1  
+Dust blocks airflow and insulates components.  
+
+80. Which protocol is connection-oriented?  
+TCP,UDP,ICMP,ARP  
+1  
+TCP ensures reliable, ordered data delivery.  
+
+81. What does "MAC filtering" do?  
+Block devices by address,Encrypt data,Assign IPs,Scan for viruses  
+1  
+MAC filtering allows/denies devices based on MAC addresses.  
+
+82. Which is a Layer 4 protocol?  
+IP,TCP,ARP,HTTP  
+2  
+TCP (Transport Layer) ensures data delivery.  
+
+83. What does "S.M.A.R.T." monitor?  
+CPU temperature,Hard drive health,RAM usage,Network speed  
+2  
+S.M.A.R.T. predicts HDD/SSD failures.  
+
+84. Which is a physical security measure?  
+Firewall,Antivirus,CCTV,Encryption  
+3  
+CCTV cameras deter physical tampering.  
+
+85. What does "VM" stand for?  
+Virtual Machine,Volatile Memory,Video Monitor,Voltage Meter  
+1  
+VMs emulate separate computers on one hardware.  
+
+86. Which RAID requires at least 4 disks?  
+RAID 0,RAID 1,RAID 5,RAID 6  
+4  
+RAID 6 uses dual parity and needs 4+ disks.  
+
+87. What does "IDE" refer to?  
+A disk interface,A CPU socket,A RAM type,A monitor standard  
+1  
+IDE (PATA) was an older HDD interface.  
+
+88. Which command terminates processes in Linux?  
+kill,stop,exit,shutdown  
+1  
+`kill` ends processes by PID or name.  
+
+89. What is the purpose of a heatsink?  
+Cool CPU/GPU,Boost RAM,Power HDD,Charge battery  
+1  
+Heatsinks dissipate heat from processors.  
+
+90. Which is a private IP range?  
+192.168.x.x,172.217.x.x,8.8.8.8,142.250.x.x  
+1  
+192.168.x.x is reserved for private networks.  
+
+91. What does "IRQ" handle?  
+Interrupt requests,Internet routing,Image quality,Input devices  
+1  
+IRQs manage hardware interrupts (e.g., keyboard).  
+
+92. Which tool edits the Windows Registry?  
+regedit,cmd,msconfig,Task Manager  
+1  
+`regedit` modifies the Windows Registry database.  
+
+93. What does "QoS" prioritize?  
+Network traffic,CPU usage,Disk space,Power consumption  
+1  
+QoS ensures critical traffic (e.g., VoIP) gets priority.  
+
+94. Which is a hybrid topology?  
+Star-Ring,Star-Bus,Both,None  
+3  
+Hybrid topologies combine elements (e.g., Star-Bus).  
+
+95. What does "FAT32" lack compared to NTFS?  
+File permissions,Long filenames,Folder creation,Basic storage  
+1  
+FAT32 lacks permissions and file encryption.  
+
+96. Which is a static IP address?  
+192.168.1.5,Assigned by DHCP,Changes weekly,Automatic  
+1  
+Static IPs are manually set and don’t change.  
+
+97. What does "VMware Tools" provide?  
+Better VM performance,Firewall rules,BIOS updates,Malware scans  
+1  
+VMware Tools enhances VM drivers and features.  
+
+98. Which is a BIOS security feature?  
+Disk encryption,Boot password,Firewall,Antivirus  
+2  
+BIOS passwords prevent unauthorized boot access.  
+
+99. What does "PCIe x16" typically connect?  
+GPU,Sound card,HDD,USB hub  
+1  
+PCIe x16 slots are for graphics cards.  
+
+100. Which protocol uses port 53?  
+HTTP,DNS,SSH,SMTP  
+2  
+DNS uses port 53 for domain name resolution.  
+
+101. What is the purpose of a subnet mask?  
+Encrypt data,Define network/host portions,Assign IPs,Block malware  
+2  
+Subnet masks separate IP addresses into network and host parts.  
+
+102. Which command lists active connections in Linux?  
+netstat,ping,ipconfig,tracert  
+1  
+`netstat` shows network connections and ports.  
+
+103. What does "HTTPS" encrypt?  
+Emails,Hard drives,Web traffic,BIOS  
+3  
+HTTPS encrypts data between browsers and servers.  
+
+104. Which RAID level uses double parity?  
+RAID 0,RAID 1,RAID 5,RAID 6  
+4  
+RAID 6 can survive two simultaneous disk failures.  
+
+105. What is the default gateway’s role?  
+Route traffic between networks,Filter spam,Assign DNS,Encrypt data  
+1  
+Gateways connect local networks to external ones (e.g., the internet).  
+
+106. Which Wi-Fi standard offers the highest throughput?  
+802.11ac,802.11n,802.11g,802.11b  
+1  
+802.11ac (Wi-Fi 5) provides up to 3.5 Gbps.  
+
+107. What does "VLAN" segment?  
+Networks,Hard drives,CPUs,Power circuits  
+1  
+VLANs logically divide a physical network into virtual segments.  
+
+108. Which Linux permission grants execute rights?  
+r,w,x,a  
+3  
+`x` allows executing files/running scripts.  
+
+109. What does "SSD TRIM" do?  
+Boost speed,Improve longevity,Encrypt data,Assign IPs  
+2  
+TRIM optimizes SSD performance by marking unused blocks.  
+
+110. Which tool checks disk health in Linux?  
+smartctl,chkdsk,defrag,diskpart  
+1  
+`smartctl` monitors HDD/SSD health via S.M.A.R.T.  
+
+111. What is a common symptom of a failing PSU?  
+Random shutdowns,Slow internet,Corrupt files,Blue screens  
+1  
+A failing PSU causes unstable power delivery.  
+
+112. Which protocol uses port 443?  
+HTTP,HTTPS,FTP,SSH  
+2  
+HTTPS uses port 443 for encrypted web traffic.  
+
+113. What does "APIPA" assign?  
+169.254.x.x IPs,DNS servers,Default gateways,MAC addresses  
+1  
+APIPA gives self-assigned IPs when DHCP fails.  
+
+114. Which is a Windows recovery tool?  
+System Restore,Defrag,Task Manager,Regedit  
+1  
+System Restore rolls back OS to a previous state.  
+
+115. What does "NIC teaming" achieve?  
+Load balancing/Fault tolerance,Encryption,Malware scanning,BIOS updates  
+1  
+NIC teaming combines multiple network interfaces for redundancy/speed.  
+
+116. Which filesystem is used by Linux?  
+NTFS,FAT32,ext4,HFS+  
+3  
+ext4 is a common Linux filesystem.  
+
+117. What does "PXE boot" require?  
+Network connection,USB drive,DVD,BIOS password  
+1  
+PXE boots devices over a network (e.g., diskless workstations).  
+
+118. Which command updates packages in Ubuntu?  
+apt-get update,ipconfig,chkdsk,msconfig  
+1  
+`apt-get update` refreshes Ubuntu’s package lists.  
+
+119. What is the purpose of a jumper on a HDD?  
+Master/Slave config,Encrypt data,Boost speed,Cooling  
+1  
+Jumpers configure IDE/PATA drive roles.  
+
+120. Which protocol is stateless?  
+TCP,UDP,HTTP/HTTPS,FTP  
+2  
+UDP doesn’t track connections (e.g., streaming).  
+
+121. What does "IMEI" identify?  
+Mobile device,Network printer,SSD,CPU  
+1  
+IMEI uniquely identifies mobile devices.  
+
+122. Which tool resets Windows passwords?  
+Regedit,Linux Live USB,Defrag,Task Manager  
+2  
+Linux Live USBs can reset Windows admin passwords.  
+
+123. What does "RDP" stand for?  
+Remote Desktop Protocol,Random Data Packet,Rapid Disk Partitioning,Redundant Data Protection  
+1  
+RDP allows remote control of Windows machines.  
+
+124. Which is a Linux distribution?  
+Ubuntu,Windows Server,MacOS,iOS  
+1  
+Ubuntu is a popular Linux distro.  
+
+125. What does "SATA III" max speed?  
+1.5 Gbps,3 Gbps,6 Gbps,12 Gbps  
+3  
+SATA III supports 6 Gbps (600 MB/s).  
+
+126. Which command terminates a process in Windows?  
+taskkill,shutdown,exit,format  
+1  
+`taskkill` ends processes by PID or name.  
+
+127. What is "tpm.msc" used for?  
+Disk management,Trusted Platform Module,Task Manager,Power settings  
+2  
+TPM manages encryption keys for hardware security.  
+
+128. Which protocol uses port 110?  
+HTTP,POP3,SSH,DNS  
+2  
+POP3 (email retrieval) uses port 110.  
+
+129. What does "GRUB" manage?  
+Boot loader,File systems,Network drivers,BIOS  
+1  
+GRUB is Linux’s boot loader.  
+
+130. Which RAID requires minimum 3 disks?  
+RAID 0,RAID 1,RAID 5,RAID 10  
+3  
+RAID 5 needs at least 3 disks for striping + parity.  
+
+131. What is "chmod 755" in Linux?  
+Read+write for all,Full permissions,Read/execute for owner+read for others,Execute only  
+3  
+755 = Owner: rwx, Group/Others: rx.  
+
+132. Which tool benchmarks CPU performance?  
+Cinebench,Defrag,ipconfig,chkdsk  
+1  
+Cinebench tests CPU rendering performance.  
+
+133. What does "ECC" RAM correct?  
+Data errors,Power surges,Overheating,Driver issues  
+1  
+ECC RAM fixes single-bit memory errors.  
+
+134. Which is a wireless attack type?  
+Phishing,Evil Twin,DDoS,SQLi  
+2  
+Evil Twin mimics legitimate Wi-Fi to steal data.  
+
+135. What does "HFS+" stand for?  
+Hierarchical File System,High-Frequency Storage,Hardware File System,Hybrid Flash Storage  
+1  
+HFS+ is Apple’s legacy filesystem.  
+
+136. Which command shows routing tables?  
+route,ping,tracert,netstat  
+1  
+`route print` (Windows) or `route` (Linux) displays routes.  
+
+137. What is "LoJack" used for?  
+Laptop tracking,Data encryption,Malware removal,CPU cooling  
+1  
+LoJack helps recover stolen devices via geolocation.  
+
+138. Which protocol uses port 143?  
+IMAP,HTTP,SSH,DNS  
+1  
+IMAP (email sync) uses port 143.  
+
+139. What does "NAT overload" use?  
+PAT,ARP,DHCP,DNS  
+1  
+PAT (Port Address Translation) maps multiple private IPs to one public IP.  
+
+140. Which tool edits group policies in Windows?  
+gpedit.msc,regedit,cmd,msconfig  
+1  
+`gpedit.msc` modifies Group Policy settings.  
+
+141. What is "SLAAC" used for?  
+IPv6 address assignment,Email encryption,DNS resolution,RAID config  
+1  
+SLAAC (Stateless Address Autoconfiguration) assigns IPv6 addresses.  
+
+142. Which Linux directory contains logs?  
+/var/log,/etc,/bin,/home  
+1  
+`/var/log` stores system and application logs.  
+
+143. What does "IOPS" measure?  
+Storage speed,Network latency,CPU clock,RAM capacity  
+1  
+IOPS = Input/Output Operations Per Second (HDD/SSD performance).  
+
+144. Which is a physical network topology?  
+Bus,Star,Ring,All of the above  
+4  
+Bus, Star, and Ring are physical topologies.  
+
+145. What does "LUKS" encrypt?  
+Disks,Emails,BIOS,Power supply  
+1  
+LUKS encrypts entire disks/partitions in Linux.  
+
+146. Which protocol uses port 3389?  
+RDP,SSH,HTTP,SMTP  
+1  
+RDP (Remote Desktop Protocol) uses port 3389.  
+
+147. What is "Sysprep" used for?  
+Imaging/deploying Windows,Defragmenting disks,Updating drivers,Scanning malware  
+1  
+Sysprep generalizes Windows installations for cloning.  
+
+148. Which command flushes DNS cache?  
+ipconfig /flushdns,ping -t,netstat -a,tracert  
+1  
+`ipconfig /flushdns` clears the DNS resolver cache.  
+
+149. What does "SELinux" enforce?  
+Security policies,Network speeds,CPU overclocking,Disk quotas  
+1  
+SELinux implements mandatory access control (MAC) in Linux.  
+
+150. Which RAID combines RAID 0 and RAID 1?  
+RAID 5,RAID 6,RAID 10,RAID 0  
+3  
+RAID 10 (1+0) mirrors and stripes data for speed + redundancy.  
+
+151. What does "IaaS" stand for?  
+Infrastructure as a Service,Internet as a Service,Integration as a Service,Identity as a Service  
+1  
+IaaS provides virtualized computing resources over the internet (e.g., AWS EC2).  
+
+152. Which protocol is used for email encryption?  
+SMTP,IMAP,POP3,S/MIME  
+4  
+S/MIME encrypts email content and attachments.  
+
+153. What is the purpose of "syslog"?  
+Centralized logging,File sharing,Network routing,Malware detection  
+1  
+Syslog collects and stores log messages from network devices.  
+
+154. Which RAID level combines RAID 5 and RAID 0?  
+RAID 6,RAID 10,RAID 50,RAID 1  
+3  
+RAID 50 (5+0) stripes RAID 5 arrays for performance + parity.  
+
+155. What does "BGP" stand for?  
+Border Gateway Protocol,Basic Gateway Protocol,Binary Group Policy,Bandwidth Guarantee Protocol  
+1  
+BGP manages routing between autonomous systems on the internet.  
+
+156. Which tool scans for open ports?  
+ping,nmap,tracert,ipconfig  
+2  
+`nmap` identifies open ports and services on a network.  
+
+157. What does "ACL" enforce in networking?  
+Access rules,Encryption standards,IP assignments,Power management  
+1  
+ACLs (Access Control Lists) filter traffic based on rules.  
+
+158. Which Linux command changes file permissions?  
+chmod,chown,ls,cat  
+1  
+`chmod` modifies read/write/execute permissions.  
+
+159. What is "802.1X" used for?  
+Network authentication,Data encryption,Disk partitioning,CPU cooling  
+1  
+802.1X provides port-based network access control (e.g., RADIUS).  
+
+160. Which protocol uses port 161?  
+SNMP,HTTP,SSH,DNS  
+1  
+SNMP (Simple Network Management Protocol) monitors devices via port 161.  
+
+161. What does "NFS" allow?  
+File sharing over a network,Email encryption,DNS resolution,RAID configuration  
+1  
+NFS (Network File System) shares files between Unix/Linux systems.  
+
+162. Which is a Type 2 hypervisor?  
+VMware ESXi,Hyper-V,Oracle VirtualBox,Proxmox  
+3  
+VirtualBox runs on top of an existing OS (Type 2).  
+
+163. What does "CDN" improve?  
+Website load times,CPU performance,Disk encryption,Power efficiency  
+1  
+CDNs (Content Delivery Networks) cache content globally for faster access.  
+
+164. Which command displays ARP cache?  
+arp -a,ipconfig /all,netstat -r,ping -t  
+1  
+`arp -a` lists IP-to-MAC address mappings.  
+
+165. What is "Zero Trust" security?  
+Assume no implicit trust,Block all traffic,Disable firewalls,Use only passwords  
+1  
+Zero Trust verifies every access request, even from inside the network.  
+
+166. Which filesystem supports snapshots?  
+NTFS,ZFS,FAT32,exFAT  
+2  
+ZFS (Zettabyte File System) includes snapshot capabilities.  
+
+167. What does "RTO" mean in disaster recovery?  
+Recovery Time Objective,Real-Time Operation,Router Timeout,Remote Terminal Access  
+1  
+RTO defines the maximum acceptable downtime after a failure.  
+
+168. Which protocol uses port 389?  
+LDAP,HTTPS,SSH,RDP  
+1  
+LDAP (Lightweight Directory Access Protocol) manages directory services.  
+
+169. What is "containerization"?  
+Isolating apps in lightweight environments,Virtualizing hardware,Encrypting data,Defragmenting disks  
+1  
+Containers (e.g., Docker) bundle apps with dependencies.  
+
+170. Which tool benchmarks disk speed?  
+CrystalDiskMark,ipconfig,chkdsk,regedit  
+1  
+CrystalDiskMark measures read/write speeds of storage devices.  
+
+171. What does "MTU" define?  
+Maximum packet size,Minimum bandwidth,Memory capacity,Malware thresholds  
+1  
+MTU (Maximum Transmission Unit) is the largest data unit a network can transmit.  
+
+172. Which is a cloud deployment model?  
+Public,Private,Hybrid,All of the above  
+4  
+Public, Private, and Hybrid are common cloud models.  
+
+173. What does "WDS" stand for in Windows?  
+Windows Deployment Services,Wireless Data Security,Web Development Suite,Wi-Fi Direct Setup  
+1  
+WDS deploys Windows OS images over a network.  
+
+174. Which command creates a directory in Linux?  
+mkdir,ls,rm,cd  
+1  
+`mkdir` creates new directories/folders.  
+
+175. What is "IPsec" used for?  
+Secure VPN connections,Email routing,DNS resolution,RAID configuration  
+1  
+IPsec encrypts data traversing VPN tunnels.  
+
+176. Which protocol uses port 445?  
+SMB,HTTP,SSH,DNS  
+1  
+SMB (Server Message Block) shares files/printers over port 445.  
+
+177. What does "RPO" define?  
+Data loss tolerance,Network speed,CPU usage,Power consumption  
+1  
+RPO (Recovery Point Objective) determines acceptable data loss after a disaster.  
+
+178. Which Linux command edits text files?  
+nano,ls,chmod,ping  
+1  
+`nano` is a command-line text editor.  
+
+179. What is "MAC spoofing"?  
+Faking a device's hardware address,Encrypting data,Boosting Wi-Fi speed,Blocking ports  
+1  
+MAC spoofing disguises a device’s identity on a network.  
+
+180. Which tool checks Windows system files?  
+sfc /scannow,chkdsk,defrag,regedit  
+1  
+`sfc /scannow` repairs corrupted system files.  
+
+181. What does "VXLAN" extend?  
+Layer 2 networks,CPU performance,Disk storage,Power limits  
+1  
+VXLAN (Virtual Extensible LAN) scales VLANs across Layer 3 networks.  
+
+182. Which protocol uses port 123?  
+NTP,HTTP,SSH,DNS  
+1  
+NTP (Network Time Protocol) syncs clocks via port 123.  
+
+183. What is "SDN"?  
+Software-Defined Networking,Secure Data Network,Storage Disk Node,Serial Device Number  
+1  
+SDN separates control plane from data plane for flexible network management.  
+
+184. Which command shows disk usage in Linux?  
+df,ls,cat,ping  
+1  
+`df` reports disk space usage.  
+
+185. What does "HIDS" monitor?  
+Host activity,Network traffic,Power usage,CPU temperature  
+1  
+HIDS (Host-based Intrusion Detection System) tracks anomalies on a single device.  
+
+186. Which Wi-Fi standard uses 6 GHz?  
+Wi-Fi 6E,802.11ac,802.11n,802.11g  
+1  
+Wi-Fi 6E (802.11ax) operates on 6 GHz for reduced interference.  
+
+187. What is "DNSSEC"?  
+DNS Security Extensions,Data Network Standard,Direct NIC Setup,Default Network Service  
+1  
+DNSSEC adds cryptographic authentication to DNS responses.  
+
+188. Which tool configures IP addresses in Linux?  
+ip,ping,ls,chmod  
+1  
+`ip addr` configures network interfaces in Linux.  
+
+189. What does "FCoE" encapsulate?  
+Fibre Channel over Ethernet,Files over Cloud,Firewall rules,Full disk encryption  
+1  
+FCoE allows Fibre Channel traffic over Ethernet networks.  
+
+190. Which protocol uses port 636?  
+LDAPS,HTTP,SSH,RDP  
+1  
+LDAPS (Secure LDAP) uses port 636 for encrypted directory access.  
+
+191. What is "PCI DSS"?  
+Payment Card Industry Data Security Standard,Processor Cooling Interface,Power Control Interface,Peripheral Configuration Index  
+1  
+PCI DSS secures credit card transactions.  
+
+192. Which command lists environment variables?  
+printenv,ls,cd,rm  
+1  
+`printenv` displays all environment variables in Linux.  
+
+193. What does "SOAR" automate?  
+Security orchestration and response,Disk backups,Network cabling,CPU overclocking  
+1  
+SOAR (Security Orchestration, Automation, and Response) streamlines incident response.  
+
+194. Which filesystem is used by macOS?  
+APFS,NTFS,ext4,FAT32  
+1  
+APFS (Apple File System) is optimized for SSDs in macOS.  
+
+195. What is "EDR"?  
+Endpoint Detection and Response,Encrypted Data Routing,Extended Disk Redundancy,Ethernet Data Rate  
+1  
+EDR tools monitor endpoints for threats and respond automatically.  
+
+196. Which protocol uses port 514?  
+Syslog,HTTP,SSH,DNS  
+1  
+Syslog uses UDP/TCP port 514 for log message transmission.  
+
+197. What does "NAT64" facilitate?  
+IPv6-to-IPv4 translation,Email encryption,DNS resolution,RAID configuration  
+1  
+NAT64 allows IPv6-only devices to communicate with IPv4 networks.  
+
+198. Which tool analyzes packet captures?  
+Wireshark,nmap,ping,ipconfig  
+1  
+Wireshark inspects network traffic at the packet level.  
+
+199. What is "SHA-256"?  
+A cryptographic hash function,A RAID level,A CPU instruction set,A monitor resolution  
+1  
+SHA-256 generates fixed-size 256-bit hashes for data integrity.  
+
+200. Which protocol uses port 993?  
+IMAPS,HTTP,SSH,DNS  
+1  
+IMAPS (Secure IMAP) uses port 993 for encrypted email retrieval.  
+
+201. What is the maximum number of primary partitions allowed in GPT?  
+4,32,64,Unlimited  
+4  
+GPT supports unlimited primary partitions (OS-dependent).  
+
+202. Which tool is used to terminate processes in Linux?  
+kill,stop,delete,end  
+1  
+`kill` sends signals to terminate processes by PID.  
+
+203. What does "ECC" stand for in RAM?  
+Error-Correcting Code,Electrically Coded Circuit,Encrypted Cache Control,Extended CPU Compatibility  
+1  
+ECC RAM detects and corrects memory errors.  
+
+204. Which protocol is used for secure file transfers?  
+FTP,SFTP,HTTP,Telnet  
+2  
+SFTP (SSH File Transfer Protocol) encrypts data in transit.  
+
+205. What is the purpose of the "bootrec /fixboot" command?  
+Repairs boot sector,Fixes disk errors,Resets BIOS,Updates drivers  
+1  
+`bootrec /fixboot` repairs the boot sector in Windows.  
+
+206. Which Linux directory contains user home folders?  
+/etc,/home,/var,/bin  
+2  
+`/home` stores personal user directories.  
+
+207. What does "IRQL" stand for in Windows?  
+Interrupt Request Level,Input/Output Request Line,Internal RAM Query Limit,Internet Routing Quality Layer  
+1  
+IRQL prioritizes hardware interrupts.  
+
+208. Which Wi-Fi standard operates on 2.4 GHz and 5 GHz?  
+802.11n,802.11ac,802.11g,802.11a  
+1  
+802.11n (Wi-Fi 4) supports dual-band operation.  
+
+209. What is the function of a toner cartridge in a laser printer?  
+Stores ink,Generates heat,Applies toner powder,Cleans the drum  
+3  
+Toner cartridges contain powdered ink for laser printing.  
+
+210. Which RAID level is also called "striped mirrors"?  
+RAID 0,RAID 1,RAID 5,RAID 10  
+4  
+RAID 10 combines mirroring (RAID 1) and striping (RAID 0).  
+
+211. What does "PXE" stand for?  
+Preboot Execution Environment,Post-XML Encryption,Power Supply Extension,Peripheral Expansion Engine  
+1  
+PXE enables network booting for diskless devices.  
+
+212. Which port does SNMP use?  
+161,443,22,80  
+1  
+SNMP (Simple Network Management Protocol) uses port 161.  
+
+213. What is the purpose of "sysctl" in Linux?  
+Configure kernel parameters,Manage users,Encrypt files,Monitor CPU  
+1  
+`sysctl` modifies kernel settings at runtime.  
+
+214. Which command displays Linux kernel messages?  
+dmesg,lsmod,uname,top  
+1  
+`dmesg` shows boot and kernel-related logs.  
+
+215. What does "RADIUS" provide?  
+Centralized authentication,Data encryption,Disk redundancy,Malware scanning  
+1  
+RADIUS authenticates users on a network (e.g., Wi-Fi).  
+
+216. Which tool checks for duplicate IP addresses?  
+arp-scan,ping,tracert,netstat  
+1  
+`arp-scan` identifies IP/MAC conflicts on a LAN.  
+
+217. What is "PortFast" used for in switches?  
+Bypass STP delays,Block ports,Encrypt traffic,Boost speed  
+1  
+PortFast skips STP listening/learning states for edge ports.  
+
+218. Which protocol uses port 514?  
+Syslog,HTTP,SSH,DNS  
+1  
+Syslog uses UDP/TCP port 514 for log aggregation.  
+
+219. What does "MBR" stand for?  
+Master Boot Record,Memory Buffer Register,Main BIOS Routine,Multi-Band Routing  
+1  
+MBR contains partition tables and boot code.  
+
+220. Which Linux command compresses files?  
+tar,gzip,zip,All of the above  
+4  
+`tar`, `gzip`, and `zip` are common compression tools.  
+
+221. What is the purpose of "chroot" in Linux?  
+Isolate processes,Encrypt disks,Update kernels,Manage users  
+1  
+`chroot` restricts a process to a specific directory.  
+
+222. Which Windows utility repairs the Master File Table?  
+chkdsk,sfc,diskpart,defrag  
+1  
+`chkdsk /f` fixes MFT errors on NTFS drives.  
+
+223. What does "IMAP" allow compared to POP3?  
+Server-side email management,Faster transfers,Encryption,File sharing  
+1  
+IMAP syncs emails across devices; POP3 downloads locally.  
+
+224. Which protocol uses port 389?  
+LDAP,HTTPS,SSH,RDP  
+1  
+LDAP (Lightweight Directory Access Protocol) uses port 389.  
+
+225. What is "ECC RAM" typically used for?  
+Gaming PCs,Servers,Smartphones,Printers  
+2  
+Servers use ECC RAM for error-free critical operations.  
+
+226. Which command lists installed packages in Ubuntu?  
+dpkg --list,apt list,ls -l,ps aux  
+1  
+`dpkg --list` shows all installed DEB packages.  
+
+227. What does "TDP" measure for CPUs?  
+Thermal Design Power,Total Data Throughput,Task Distribution Protocol,Time Delay Parameter  
+1  
+TDP indicates maximum heat a CPU generates (in watts).  
+
+228. Which RAID level requires a minimum of four disks?  
+RAID 0,RAID 1,RAID 5,RAID 6  
+4  
+RAID 6 uses dual parity and needs 4+ disks.  
+
+229. What is "NLA" in Remote Desktop?  
+Network Level Authentication,Next-Gen Logging Agent,Native Link Aggregation,No-Latency Access  
+1  
+NLA enhances RDP security by authenticating before connection.  
+
+230. Which Linux command shows disk partitions?  
+fdisk -l,lsblk,df -h,All of the above  
+4  
+`fdisk`, `lsblk`, and `df` all display partition info.  
+
+231. What does "UEFI" replace?  
+BIOS,CMOS,GPU,SSD  
+1  
+UEFI modernizes boot processes compared to legacy BIOS.  
+
+232. Which tool resets Windows passwords offline?  
+chntpw,regedit,msconfig,defrag  
+1  
+`chntpw` edits Windows SAM files via Linux boot media.  
+
+233. What is "Secure Boot" designed to prevent?  
+Malware at boot,Data leaks,Overheating,Power surges  
+1  
+Secure Boot blocks unauthorized OS/software during startup.  
+
+234. Which protocol uses port 636?  
+LDAPS,HTTP,SSH,RDP  
+1  
+LDAPS (Secure LDAP) uses port 636 with TLS encryption.  
+
+235. What does "HCL" stand for in virtualization?  
+Hardware Compatibility List,High-Capacity Link,Hosted Cloud Layer,Hybrid Cluster License  
+1  
+HCL ensures hardware works with hypervisors like VMware.  
+
+236. Which command shows active processes in Linux?  
+top,ps,htop,All of the above  
+4  
+`top`, `ps`, and `htop` display running processes.  
+
+237. What is "NUMA" in servers?  
+Non-Uniform Memory Access,Network Utilization Metric Analyzer,Next-Gen Unified Module Architecture,New User Management Agent  
+1  
+NUMA optimizes memory access for multi-CPU systems.  
+
+238. Which RAID level is a nested RAID?  
+RAID 0,RAID 1,RAID 10,RAID 5  
+3  
+RAID 10 (RAID 1+0) is a nested configuration.  
+
+239. What does "TACACS+" provide?  
+Centralized authentication,File sharing,Disk encryption,Malware scans  
+1  
+TACACS+ authenticates network devices (e.g., routers).  
+
+240. Which Linux command checks file integrity?  
+md5sum,ls,cat,chmod  
+1  
+`md5sum` verifies file checksums for corruption.  
+
+241. What is the purpose of "swapoff -a"?  
+Disable swap space,Enable swap,Format disks,Update kernels  
+1  
+`swapoff -a` deactivates all swap partitions/files.  
+
+242. Which protocol uses port 53 for DNS queries?  
+TCP,UDP,Both,Neither  
+3  
+DNS uses UDP for queries and TCP for zone transfers.  
+
+243. What does "SR-IOV" improve in virtualization?  
+Network performance,Storage capacity,CPU cooling,Power efficiency  
+1  
+SR-IOV allows direct hardware access for VMs.  
+
+244. Which tool benchmarks GPU performance?  
+3DMark,Cinebench,Geekbench,PCMark  
+1  
+3DMark tests graphics rendering capabilities.  
+
+245. What is "IOMMU" used for?  
+Device isolation in VMs,Data encryption,Disk partitioning,Network routing  
+1  
+IOMMU maps device DMA access for virtualization.  
+
+246. Which command lists USB devices in Linux?  
+lsusb,lspci,lsblk,lscpu  
+1  
+`lsusb` displays connected USB devices.  
+
+247. What does "PII" stand for in security?  
+Personally Identifiable Information,Protected Internet Infrastructure,Pre-Installed Interface,Public IP Identifier  
+1  
+PII includes data like SSNs, emails, and phone numbers.  
+
+248. Which protocol uses port 902 for VMware?  
+VMware ESXi management,HTTP,SSH,DNS  
+1  
+Port 902 manages VMware ESXi host communication.  
+
+249. What is "MAC flooding" an attack on?  
+Switches,Routers,Firewalls,Servers  
+1  
+MAC flooding overwhelms switch CAM tables to cause fail-open.  
+
+250. Which Linux command schedules tasks?  
+cron,systemd,at,All of the above  
+4  
+`cron`, `systemd`, and `at` handle task scheduling.  
+
+251. Which printer type uses a fuser assembly?  
+Laser,Inkjet,Dot Matrix,Thermal  
+1  
+Laser printers melt toner onto paper using a heated fuser assembly.  
+
+252. What is the primary risk of using WEP encryption?  
+Weak security,Slow speeds,High cost,Compatibility issues  
+1  
+WEP uses outdated RC4 encryption vulnerable to brute-force attacks.  
+
+253. Which Linux command checks filesystem integrity?  
+fsck,chkdsk,defrag,scandisk  
+1  
+`fsck` repairs Linux filesystems after improper shutdowns.  
+
+254. What does "HIPS" stand for in security?  
+Host-based Intrusion Prevention System,High-Integrity Protocol Security,Hybrid IP Storage,Hardware Isolation Partition System  
+1  
+HIPS monitors and blocks suspicious activity on a single host.  
+
+255. Which protocol uses port 993 for encrypted email?  
+IMAPS,HTTP,SSH,DNS  
+1  
+IMAPS (Internet Message Access Protocol Secure) uses TLS on port 993.  
+
+256. What is the purpose of a "KVM switch"?  
+Control multiple PCs with one keyboard/mouse,Boost GPU performance,Encrypt network traffic,Manage RAID arrays  
+1  
+KVM switches let one set of peripherals control multiple devices.  
+
+257. Which RAID level is ideal for backup servers?  
+RAID 0,RAID 1,RAID 5,RAID 6  
+4  
+RAID 6’s dual parity ensures redundancy even if two disks fail.  
+
+258. What does "NIC teaming" achieve?  
+Load balancing/Fault tolerance,Data encryption,Malware scanning,BIOS updates  
+1  
+NIC teaming combines multiple network interfaces for reliability.  
+
+259. Which Windows tool encrypts drives?  
+BitLocker,Defrag,Task Manager,Regedit  
+1  
+BitLocker provides full-disk encryption for Windows volumes.  
+
+260. What is "PCIe bifurcation" used for?  
+Split x16 slots into smaller lanes,Overclock CPUs,Encrypt SSDs,Cool GPUs  
+1  
+Bifurcation divides PCIe lanes for multiple devices (e.g., NVMe SSDs).  
+
+261. Which Linux command archives files?  
+tar,zip,gzip,All of the above  
+4  
+`tar`, `zip`, and `gzip` create compressed archives.  
+
+262. What does "SED" mean in storage?  
+Self-Encrypting Drive,Solid-state Encryption Device,Serial Erasure Directory,Secure Erasure Daemon  
+1  
+SEDs automatically encrypt data at rest using hardware.  
+
+263. Which protocol uses port 3389?  
+RDP,SSH,HTTP,SMTP  
+1  
+RDP (Remote Desktop Protocol) uses port 3389 for remote access.  
+
+264. What is "ECC memory" unsuitable for?  
+Gaming PCs due to latency,Servers,Workstations,RAID controllers  
+1  
+ECC’s error correction adds latency, making it poor for gaming.  
+
+265. Which tool diagnoses RAM errors?  
+MemTest86,chkdsk,Defrag,Wireshark  
+1  
+MemTest86 detects faulty RAM modules via rigorous testing.  
+
+266. What does "TDP" stand for in CPUs?  
+Thermal Design Power,Total Data Performance,Task Distribution Protocol,Transient Duty Phase  
+1  
+TDP indicates maximum heat a CPU can generate (in watts).  
+
+267. Which Wi-Fi standard uses OFDMA?  
+Wi-Fi 6 (802.11ax),Wi-Fi 5 (802.11ac),Wi-Fi 4 (802.11n),Wi-Fi 3 (802.11g)  
+1  
+OFDMA in Wi-Fi 6 improves efficiency for multiple devices.  
+
+268. What is "GPU passthrough" in virtualization?  
+Direct hardware access for VMs,Shared GPU resources,Encrypted GPU memory,GPU overclocking  
+1  
+Passthrough assigns physical GPUs exclusively to VMs.  
+
+269. Which command lists Linux kernel modules?  
+lsmod,modprobe,insmod,rmmod  
+1  
+`lsmod` displays loaded kernel modules.  
+
+270. What does "SLAAC" automate in IPv6?  
+Address assignment,DNS resolution,Firewall rules,RAID config  
+1  
+SLAAC lets devices self-configure IPv6 addresses without DHCP.  
+
+271. Which tool benchmarks storage IOPS?  
+CrystalDiskMark,Geekbench,3DMark,Cinebench  
+1  
+CrystalDiskMark measures read/write operations per second.  
+
+272. What is "VLAN hopping"?  
+Gaining unauthorized VLAN access,Boosting Wi-Fi signals,Encrypting traffic,Overloading switches  
+1  
+VLAN hopping exploits switch port misconfigurations.  
+
+273. Which protocol uses port 514 for log aggregation?  
+Syslog,HTTP,SSH,DNS  
+1  
+Syslog centralizes log collection via UDP/TCP port 514.  
+
+274. What does "ZFS" provide?  
+Snapshotting/Data integrity,Encryption,Malware scans,BIOS updates  
+1  
+ZFS ensures data integrity with checksums and snapshots.  
+
+275. Which Linux command modifies file ownership?  
+chown,chmod,ls,cat  
+1  
+`chown` changes file/folder owner and group permissions.  
+
+276. What is "APIPA" used for?  
+Self-assign IPs when DHCP fails,Encrypt data,Resolve DNS,Block malware  
+1  
+APIPA assigns 169.254.x.x addresses if DHCP is unavailable.  
+
+277. Which RAID level is a striped set?  
+RAID 0,RAID 1,RAID 5,RAID 10  
+1  
+RAID 0 stripes data across disks for speed (no redundancy).  
+
+278. What does "NAT-T" enable?  
+IPsec through NAT devices,Email encryption,DNS resolution,RAID 0 striping  
+1  
+NAT-Traversal allows VPNs to bypass NAT restrictions.  
+
+279. Which tool configures VLANs on a switch?  
+CLI (e.g., Cisco IOS),Wireshark,Defrag,Task Manager  
+1  
+Switch CLIs (e.g., `vlan 10`) create and manage VLANs.  
+
+280. What is "Secure Boot" designed to block?  
+Unauthorized firmware/OS,Data leaks,Overheating,Power surges  
+1  
+Secure Boot prevents unsigned code from executing at boot.  
+
+281. Which Linux command checks open ports?  
+netstat,ss,lsof,All of the above  
+4  
+`netstat`, `ss`, and `lsof` list active ports and connections.  
+
+282. What does "EDR" focus on?  
+Endpoint threat detection/response,Network encryption,Disk backups,CPU overclocking  
+1  
+EDR tools monitor endpoints for advanced threats.  
+
+283. Which protocol uses port 623 for server management?  
+IPMI,HTTP,SSH,DNS  
+1  
+IPMI (Intelligent Platform Management Interface) uses port 623.  
+
+284. What is "NUMA" optimization for?  
+Multi-CPU memory access,GPU rendering,Disk encryption,Power savings  
+1  
+NUMA reduces latency in multi-socket servers.  
+
+285. Which command resets Windows Update components?  
+net stop wuauserv,ipconfig /flushdns,chkdsk,defrag  
+1  
+`net stop wuauserv` halts the Windows Update service for repairs.  
+
+286. What does "RAID 60" combine?  
+RAID 6 + RAID 0,RAID 5 + RAID 0,RAID 1 + RAID 0,RAID 10 + RAID 0  
+1  
+RAID 60 stripes multiple RAID 6 arrays for scalability.  
+
+287. Which Linux directory holds kernel files?  
+/boot,/etc,/var,/tmp  
+1  
+`/boot` stores kernel images and bootloader files.  
+
+288. What is "PCI DSS" compliance mandatory for?  
+Credit card processing,Data backups,Network speeds,CPU cooling  
+1  
+PCI DSS secures payment card transactions.  
+
+289. Which tool analyzes disk fragmentation?  
+Defragmenter,chkdsk,smartctl,Wireshark  
+1  
+Defragmenter reorganizes fragmented files on HDDs.  
+
+290. What does "VXLAN" extend?  
+Layer 2 networks over Layer 3,CPU cores,SSD lifespan,Power limits  
+1  
+VXLAN tunnels Ethernet frames over IP networks.  
+
+291. Which protocol uses port 5432?  
+PostgreSQL,HTTP,SSH,DNS  
+1  
+PostgreSQL databases listen on port 5432.  
+
+292. What is "IOMMU" used for in virtualization?  
+Device passthrough,Data encryption,Disk partitioning,Network routing  
+1  
+IOMMU allows VMs direct access to physical hardware.  
+
+293. Which command lists Linux environment variables?  
+printenv,env,set,All of the above  
+4  
+`printenv`, `env`, and `set` display environment variables.  
+
+294. What does "SELinux" enforce?  
+Mandatory access control,Firewall rules,Disk quotas,CPU priorities  
+1  
+SELinux restricts processes via security policies.  
+
+295. Which RAID level is best for video editing?  
+RAID 0,RAID 1,RAID 5,RAID 6  
+1  
+RAID 0’s striping maximizes speed for large files.  
+
+296. What is "DNSSEC" designed to prevent?  
+DNS spoofing,Data breaches,Malware,Power surges  
+1  
+DNSSEC adds cryptographic signatures to DNS responses.  
+
+297. Which Linux command kills processes by name?  
+pkill,top,ps,htop  
+1  
+`pkill -f "process_name"` terminates processes by name.  
+
+298. What does "TLS 1.3" improve over TLS 1.2?  
+Simpler handshake,Stronger encryption,Both,Neither  
+3  
+TLS 1.3 reduces latency and removes vulnerable ciphers.  
+
+299. Which tool creates Windows system images?  
+DISM,chkdsk,Defrag,Regedit  
+1  
+DISM captures/restores Windows images (e.g., `dism /Capture-Image`).  
+
+300. What does "LDAP" manage?  
+Directory services,Email routing,DNS resolution,RAID arrays  
+1  
+LDAP organizes user/device data in hierarchical directories.  
+
+

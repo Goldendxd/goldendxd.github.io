@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MCQ Quiz - Real Time Answers</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="quiz-container">
+      <h1>MCQ Quiz</h1>
+      <div id="questions"></div>
+      <div id="results"></div>
+    </div>
+
+    <script>
+      async function loadQuestions() {
+        const response = await fetch("questions.txt");
+        const text = await response.text();
+        const lines = text.split("\n").filter((line) => line.trim() !== "");
+        let questions = [];
+        for (let i = 0; i < lines.length; i += 4) {
+          questions.push({
+            question: lines[i].replace(/^\d+\.\s*/, ""),
+            options: lines[i + 1].split(","),
+            answer: parseInt(lines[i + 2].trim()) - 1,
+            reason: lines[i + 3],
+          });
+        }
+        return questions;
+      }
+
+      function renderQuestions(questions) {
+        const container = document.getElementById("questions");
+        container.innerHTML = "";
+
+        questions.forEach((q, idx) => {
+          const qDiv = document.createElement("div");
+          qDiv.className = "question-block";
+
+          const qTitle = document.createElement("p");
+          qTitle.innerHTML = `<b>Q${idx + 1}:</b> ${q.question}`;
+          qDiv.appendChild(qTitle);
+
+          q.options.forEach((opt, oIdx) => {
+            const label = document.createElement("label");
+            const input = document.createElement("input");
+            input.type = "radio";
+            input.name = `q${idx}`;
+            input.value = oIdx;
+
+            input.addEventListener("change", () => {
+              // Clear previous styles
+              [...qDiv.querySelectorAll("label")].forEach((l) => {
+                l.classList.remove("correct", "wrong");
+              });
+              // Mark selected option
+              if (oIdx === q.answer) {
+                label.classList.add("correct");
+              } else {
+                label.classList.add("wrong");
+                // Also highlight correct option
+                const correctLabel = qDiv.querySelector(
+                  `input[value="${q.answer}"]`
+                ).parentElement;
+                correctLabel.classList.add("correct");
+              }
+
+              // Show reason
+              let reasonEl = qDiv.querySelector(".reason");
+              if (!reasonEl) {
+                reasonEl = document.createElement("p");
+                reasonEl.className = "reason";
+                qDiv.appendChild(reasonEl);
+              }
+              reasonEl.textContent = `Reason: ${q.reason}`;
+
+              // Update score
+              updateScore(questions);
+            });
+
+            label.appendChild(input);
+            label.appendChild(document.createTextNode(opt));
+            qDiv.appendChild(label);
+          });
+
+          container.appendChild(qDiv);
+        });
+      }
+
+      function updateScore(questions) {
+        let score = 0;
+        questions.forEach((q, idx) => {
+          const selected = document.querySelector(
+            `input[name="q${idx}"]:checked`
+          );
+          if (selected && parseInt(selected.value) === q.answer) {
+            score++;
+          }
+        });
+        document.getElementById(
+          "results"
+        ).textContent = `Your Score: ${score} / ${questions.length}`;
+      }
+
+      document.addEventListener("DOMContentLoaded", async () => {
+        const questions = await loadQuestions();
+        renderQuestions(questions);
+      });
+    </script>
+  </body>
+</html>
